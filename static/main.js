@@ -74,16 +74,16 @@ function getCurriencies(callback) {
 }
 
 
-let currenciesRate = getCurriencies((err, data) => {
+let currienciesRate = getCurriencies((err, data) => {
         if (err) {
             console.log(`Error during getting curriencies rate`);
         } else {
             console.log(data);
-            return currenciesRate = data;
+            return data;
         } 
 });
 
-console.log(currenciesRate);
+console.log(currienciesRate);
 
 function main() {
     const Oleg = new Profile({
